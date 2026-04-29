@@ -12,6 +12,7 @@
                      <p>posted by <b>{{$post->usertype}}</b></p>
                      <div class="btn_main"><a href="{{url('post_details',$post->id)}}">Read more</a></div>
                  </div>
+                 <livewire:comments :model="$post" />
                  @endforeach
 
              </div>
